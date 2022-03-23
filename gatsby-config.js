@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `yellowDev Club`,
+    description: `アイデア、テクノロジー、哲学、D.I.Yを用い、経済活動にに頼らず、地球環境を利用した衣食住を開拓。 | Using ideas, technology, philosophy, and DIY, we will develop clothing, food, and shelter that utilizes the global environment without relying on economic activities.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
@@ -30,6 +30,16 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `poppins\:100,100i,300,300i,600,600i`,
+          `noto sans japanese\:100,400,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
