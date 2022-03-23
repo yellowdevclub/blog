@@ -3,9 +3,19 @@ module.exports = {
     title: `yellowDev Club`,
     description: `アイデア、テクノロジー、哲学、D.I.Yを用い、経済活動にに頼らず、地球環境を利用した衣食住を開拓。 | Using ideas, technology, philosophy, and DIY, we will develop clothing, food, and shelter that utilizes the global environment without relying on economic activities.`,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://yellowdev.club/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        /*
+         * The full URL of the WordPress site's GraphQL API.
+         * Example : 'https://www.example-site.com/graphql'
+         */
+        url: `https://wpgatsbydemo.wpengine.com/graphql`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
